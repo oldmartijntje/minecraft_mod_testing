@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "avans-eet-banaantjes",
+	"version": "${version}",
+	"name": "Avans eet banaantjes",
+	"description": "Bababooi. Follow OldMartijntje on github.",
+	"authors": [
+		"OldMartijntje",
+		"Brimnes"
+	],
+	"contact": {
+		"homepage": "https://oldmartijntje.nl",
+		"sources": "https://github.com/oldmartijntje"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/avans-eet-banaantjes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.martinus.avans1.AvansEetBanaantjes"
+		],
+		"fabric-datagen": [
+			"com.martinus.avans1.AvansEetBanaantjesDataGenerator"
+		],
+		"client": [
+			"com.martinus.avans1.TutorialModelClient"
+		]
+	},
+	"mixins": [
+		"avans-eet-banaantjes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
