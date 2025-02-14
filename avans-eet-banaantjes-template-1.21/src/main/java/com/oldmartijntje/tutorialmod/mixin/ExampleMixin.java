@@ -1,4 +1,4 @@
-package com.martinus.avans1.mixin;
+package com.oldmartijntje.tutorialmod.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

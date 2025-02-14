@@ -1,33 +1,29 @@
 {
 	"schemaVersion": 1,
-	"id": "avans-eet-banaantjes",
+	"id": "tutorialmod",
 	"version": "${version}",
 	"name": "Avans eet banaantjes",
-	"description": "Bababooi. Follow OldMartijntje on github.",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"OldMartijntje",
-		"Brimnes"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "https://oldmartijntje.nl",
-		"sources": "https://github.com/oldmartijntje"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/avans-eet-banaantjes/icon.png",
+	"icon": "assets/tutorialmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.martinus.avans1.AvansEetBanaantjes"
+			"com.oldmartijntje.tutorialmod.AvansEetBanaantjes"
 		],
 		"fabric-datagen": [
-			"com.martinus.avans1.AvansEetBanaantjesDataGenerator"
-		],
-		"client": [
-			"com.martinus.avans1.TutorialModelClient"
+			"com.oldmartijntje.tutorialmod.AvansEetBanaantjesDataGenerator"
 		]
 	},
 	"mixins": [
-		"avans-eet-banaantjes.mixins.json"
+		"tutorialmod.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
