@@ -3,13 +3,14 @@
 	"id": "tutorialmod",
 	"version": "${version}",
 	"name": "Avans eet banaantjes",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Bababooi. Follow OldMartijntje on github.",
 	"authors": [
-		"Me!"
+		"OldMartijntje",
+		"Brimnes"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://oldmartijntje.nl",
+		"sources": "https://github.com/oldmartijntje"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/tutorialmod/icon.png",
@@ -20,6 +21,9 @@
 		],
 		"fabric-datagen": [
 			"com.oldmartijntje.tutorialmod.AvansEetBanaantjesDataGenerator"
+		],
+		"client": [
+			"com.oldmartijntje.tutorialmod.TutorialModelClient"
 		]
 	},
 	"mixins": [
