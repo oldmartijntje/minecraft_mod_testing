@@ -2,5 +2,7 @@
   "item.tutorialmod.pink_garnet": "Pink Garnet :0",
   "item.tutorialmod.raw_pink_garnet": "Raw Pink Garnet TwT",
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
-  "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet :3"
+  "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet :3",
+  "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.tutorialmod.pink_garnet_blocks": "Why this seperate?"
 }
