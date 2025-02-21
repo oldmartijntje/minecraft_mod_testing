@@ -1,5 +1,6 @@
 package com.oldmartijntje.tutorialmod.item.custom;
 
+import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
@@ -20,7 +21,8 @@ public class ChiselItem extends Item {
                     Blocks.STONE, Blocks.STONE_BRICKS,
                     Blocks.END_STONE, Blocks.END_STONE_BRICKS,
                     Blocks.TORCH, Blocks.REDSTONE_TORCH,
-                    Blocks.CRAFTING_TABLE, Blocks.CRAFTER
+                    Blocks.CRAFTING_TABLE, Blocks.CRAFTER,
+                    ModBlocks.PINK_GARNET_BLOCK, ModBlocks.MAGIC_BLOCK
             );
 
 
