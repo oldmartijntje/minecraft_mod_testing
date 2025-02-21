@@ -2,6 +2,8 @@
   "item.tutorialmod.pink_garnet": "Pink Garnet :0",
   "item.tutorialmod.raw_pink_garnet": "Raw Pink Garnet TwT",
   "item.tutorialmod.chisel": "Chisel",
+  "item.tutorialmod.cauliflower": "BLOEMKOOL!!!",
+  "item.tutorialmod.fallen_star": "Fallen Star",
 
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
@@ -12,6 +14,6 @@
   "block.tutorialmod.pink_garnet_deepslate_ore": "Harder Pink Garnet",
 
 
-  "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Why this seperate?"
+  "itemgroup.tutorialmod.pink_garnet_items": "Avans Banana Items",
+  "itemgroup.tutorialmod.pink_garnet_blocks": "Avans Banana Blocks"
 }
