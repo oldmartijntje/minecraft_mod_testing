@@ -18,7 +18,7 @@
   "itemgroup.tutorialmod.pink_garnet_items": "Avans Banana Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Avans Banana Blocks",
 
-  "tooltip.tutorialmod.magic_block.tooltip": "Throw §2gunpowder §ron me §4:3§r",
+  "tooltip.tutorialmod.magic_block.tooltip": "Throw §2transformable§r items on me §4:3§r",
 
   "tooltip.tutorialmod.chisel": "Press §e§l[Shift]§r to read more information.",
   "tooltip.tutorialmod.chisel.shift_down": "This item changes blocks into other blocks.",
