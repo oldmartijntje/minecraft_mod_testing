@@ -16,5 +16,18 @@
 
 
   "itemgroup.tutorialmod.pink_garnet_items": "Avans Banana Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Avans Banana Blocks"
+  "itemgroup.tutorialmod.pink_garnet_blocks": "Avans Banana Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "Throw §2gunpowder §ron me §4:3§r",
+
+  "tooltip.tutorialmod.chisel": "Press §e§l[Shift]§r to read more information.",
+  "tooltip.tutorialmod.chisel.shift_down": "This item changes blocks into other blocks.",
+  "tooltip.tutorialmod.chisel.shift_down.1": "try TORCH, STONE, END_STONE, CRAFTING_TABLE and PINK_GARNET_BLOCK",
+  "tooltip.tutorialmod.cauliflower": "§e15%§r chance of getting §4health boost§r.",
+
+  "tooltip.tutorialmod.drill": "Use it to remove §lBedrock§r.",
+  "tooltip.tutorialmod.drill.1": "Hold §e§l[Shift]§r to read more information.",
+  "tooltip.tutorialmod.drill.shift_down": "When crafted, has §e2 / 32§r charges.",
+  "tooltip.tutorialmod.drill.shift_down.1": "Use it on §4TNT§r to recharge 1 damage.",
+  "tooltip.tutorialmod.drill.shift_down.2": "§l2 charges§r are needed per block of bedrock."
 }
