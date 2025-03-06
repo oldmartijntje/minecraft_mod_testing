@@ -1,0 +1,33 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:piston"
+    },
+    "1": {
+      "item": "minecraft:obsidian"
+    },
+    "2": {
+      "item": "minecraft:tnt"
+    },
+    "3": {
+      "item": "minecraft:smooth_stone"
+    },
+    "4": {
+      "item": "minecraft:oak_trapdoor"
+    },
+    "5": {
+      "item": "minecraft:lever"
+    }
+  },
+  "pattern": [
+    " 2 ",
+    "235",
+    "#14"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:drill"
+  }
+}

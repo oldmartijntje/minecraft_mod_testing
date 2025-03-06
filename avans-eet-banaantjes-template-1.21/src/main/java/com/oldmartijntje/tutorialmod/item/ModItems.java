@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod.item;
 
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
 import com.oldmartijntje.tutorialmod.item.custom.ChiselItem;
+import com.oldmartijntje.tutorialmod.item.custom.DrillItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -14,6 +15,7 @@ public class ModItems {
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
 
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
+    public static final Item DRILL = registerItem("drill", new DrillItem(new Item.Settings().maxDamage(10)));
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponent.CAULIFLOWER)));
     public static final Item FALLEN_STAR = registerItem("fallen_star", new Item(new Item.Settings()));
 
