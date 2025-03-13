@@ -1,6 +1,7 @@
 package com.oldmartijntje.tutorialmod.item.custom;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
+import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -56,12 +57,14 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             } else if (CHISEL_MAP.containsValue(clickedBlock)) {
                 world.setBlockState(context.getBlockPos(), getKeyByValue(CHISEL_MAP, clickedBlock).getDefaultState());
                 context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -75,6 +78,9 @@ public class ChiselItem extends Item {
             tooltip.add(Text.translatable("tooltip.tutorialmod.chisel.shift_down.1"));
         } else {
             tooltip.add(Text.translatable("tooltip.tutorialmod.chisel"));
+        }
+        if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
+            tooltip.add(Text.literal("Last Block Changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
         }
         super.appendTooltip(stack, context, tooltip, options);
     }

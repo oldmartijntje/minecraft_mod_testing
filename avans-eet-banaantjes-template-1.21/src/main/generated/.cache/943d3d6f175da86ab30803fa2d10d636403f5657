@@ -1,4 +1,4 @@
-// 1.21	2025-03-13T13:39:34.3237868	Avans eet banaantjes/Model Definitions
+// 1.21	2025-03-13T14:10:29.0845666	Avans eet banaantjes/Model Definitions
 4d10d1813b93d6846d3318293a7212aa16757f2a assets\tutorialmod\models\item\pink_garnet_block.json
 b8a328f7a3c0600e44839a46d05666c47291ffb9 assets\tutorialmod\models\block\raw_pink_garnet_block.json
 f6a383f2a0a628d4db44251f15a89ccb2c138701 assets\tutorialmod\blockstates\pink_garnet_door.json
@@ -22,8 +22,8 @@ add44d7d8c56389e1421ca4553aeb6af9d6cac52 assets\tutorialmod\models\block\pink_ga
 81bb3e4be03a91f0bc9119ef53fc4229cc8e66b7 assets\tutorialmod\blockstates\pink_garnet_trapdoor.json
 ed27aaa00c275028e1495bb6d6bfdcea1851067b assets\tutorialmod\models\block\magic_block.json
 69a45d9eda7fcbbb46f3a4bf568243a7b2141123 assets\tutorialmod\models\item\chisel.json
-32305f6ce3ee61546017e60ba255e791e8997032 assets\tutorialmod\models\item\pink_garnet.json
 34ce29b1d2a626f207a24b91e6779d31ef2768e1 assets\tutorialmod\models\block\pink_garnet_wall_side_tall.json
+32305f6ce3ee61546017e60ba255e791e8997032 assets\tutorialmod\models\item\pink_garnet.json
 826d6bd191f97dd0a81560627f54f0dd3d93d539 assets\tutorialmod\models\item\cauliflower.json
 7db57b6386f02d11557397a148c30dea085235e0 assets\tutorialmod\blockstates\pink_garnet_slab.json
 9204479f209f552d935279fa732b1db0ac50cce6 assets\tutorialmod\models\item\pink_garnet_fence_gate.json

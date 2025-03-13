@@ -1,6 +1,7 @@
 package com.oldmartijntje.tutorialmod.item.custom;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
+import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -51,6 +52,7 @@ public class DrillItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             } else if (clickedBlock == Blocks.TNT) {
                 world.setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
                 if (context.getStack().isDamaged()) {
@@ -58,6 +60,7 @@ public class DrillItem extends Item {
                             item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
                 }
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_COMPOSTER_FILL, SoundCategory.BLOCKS);
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
         }
 
@@ -76,6 +79,11 @@ public class DrillItem extends Item {
             tooltip.add(Text.translatable("tooltip.tutorialmod.drill"));
             tooltip.add(Text.translatable("tooltip.tutorialmod.drill.1"));
         }
+
+        if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
+            tooltip.add(Text.literal("Last Block Used at " + stack.get(ModDataComponentTypes.COORDINATES)));
+        }
+
         super.appendTooltip(stack, context, tooltip, options);
     }
 }
