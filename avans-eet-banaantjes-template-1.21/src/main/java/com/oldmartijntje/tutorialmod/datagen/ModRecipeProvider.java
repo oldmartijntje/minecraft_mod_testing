@@ -58,5 +58,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.BREEZE_ROD)
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter, Identifier.of(AvansEetBanaantjes.MOD_ID, "chisel_from_breeze_rod"));
+
     }
 }
