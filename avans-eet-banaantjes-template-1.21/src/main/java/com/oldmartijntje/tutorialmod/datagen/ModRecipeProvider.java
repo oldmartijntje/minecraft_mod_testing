@@ -59,5 +59,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter, Identifier.of(AvansEetBanaantjes.MOD_ID, "chisel_from_breeze_rod"));
 
+        offerSmithingTrimRecipe(recipeExporter, ModItems.KAUPEN_SMITHING_TEMPLATE, Identifier.of(AvansEetBanaantjes.MOD_ID, "kaupen"));
     }
 }

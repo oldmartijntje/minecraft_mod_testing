@@ -21,6 +21,8 @@
 
   "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
 
+  "item.tutorialmod.kaupen_armor_trim_smithing_template": "Kaupen Armor Trim",
+
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet :3",
@@ -58,5 +60,8 @@
   "tooltip.tutorialmod.drill.1": "Hold §e§l[Shift]§r to read more information.",
   "tooltip.tutorialmod.drill.shift_down": "When crafted, has §e2 / 32§r charges.",
   "tooltip.tutorialmod.drill.shift_down.1": "Use it on §4TNT§r to recharge 1 damage.",
-  "tooltip.tutorialmod.drill.shift_down.2": "§l2 charges§r are needed per block of bedrock."
+  "tooltip.tutorialmod.drill.shift_down.2": "§l2 charges§r are needed per block of bedrock.",
+
+  "trim_material.tutorialmod.pink_garnet": "Pink Garnet Material",
+  "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Pattern"
 }
