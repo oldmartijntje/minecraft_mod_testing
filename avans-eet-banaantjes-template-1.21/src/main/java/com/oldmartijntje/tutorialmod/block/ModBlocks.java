@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod.block;
 
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
 import com.oldmartijntje.tutorialmod.block.custom.MagicBlock;
+import com.oldmartijntje.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -63,6 +64,11 @@ public class ModBlocks {
             new MagicBlock(AbstractBlock.Settings.create().strength(1f)
                             .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                             .requiresTool()));
+
+    public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
+            new PinkGarnetLampBlock(AbstractBlock.Settings.create().strength(1f)
+                    .sounds(BlockSoundGroup.LANTERN)
+                    .requiresTool().luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

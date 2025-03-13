@@ -1,7 +1,7 @@
-// 1.21	2025-03-13T12:18:30.831078	Avans eet banaantjes/Tags for minecraft:block
+// 1.21	2025-03-13T13:39:34.3237868	Avans eet banaantjes/Tags for minecraft:block
 fa8f08652df6ea86054f0d51dedc217c9e46db23 data\minecraft\tags\block\mineable\pickaxe.json
 4eeb7ff551b01251f4afb29506d181a6a25f52c5 data\minecraft\tags\block\needs_iron_tool.json
-87c23b954c6a1061edf28d30d87d40ccfecb8a8f data\minecraft\tags\block\fences.json
 6e20b69a9d2f5656b1009614747a8e826f937071 data\minecraft\tags\block\walls.json
+87c23b954c6a1061edf28d30d87d40ccfecb8a8f data\minecraft\tags\block\fences.json
 079e21ee82e19be3b06c0ad61d06e9bdce588108 data\minecraft\tags\block\needs_diamond_tool.json
 8159fdbcb7619cbd57674525489b6dfed8a407fd data\minecraft\tags\block\fence_gates.json
