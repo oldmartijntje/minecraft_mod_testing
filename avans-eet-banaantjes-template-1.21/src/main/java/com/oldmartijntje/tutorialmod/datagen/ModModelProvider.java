@@ -50,5 +50,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FALLEN_STAR, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.DRILL, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PINK_GARNET_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PINK_GARNET_HOE, Models.HANDHELD);
+
     }
 }
