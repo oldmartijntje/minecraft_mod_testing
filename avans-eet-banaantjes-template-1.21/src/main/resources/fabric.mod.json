@@ -23,7 +23,7 @@
 			"com.oldmartijntje.tutorialmod.AvansEetBanaantjesDataGenerator"
 		],
 		"client": [
-			"com.oldmartijntje.tutorialmod.TutorialModelClient"
+			"com.oldmartijntje.tutorialmod.AvansEetBanaantjesClient"
 		]
 	},
 	"mixins": [
