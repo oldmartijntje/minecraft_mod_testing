@@ -65,5 +65,12 @@
   "tooltip.tutorialmod.drill.shift_down.2": "§l2 charges§r are needed per block of bedrock.",
 
   "trim_material.tutorialmod.pink_garnet": "Pink Garnet Material",
-  "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Pattern"
+  "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Pattern",
+
+  "sounds.tutorialmod.chisel_use": "DON'T USE THE CHISEL IDIOT",
+  "sounds.tutorialmod.magic_block_break": "mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgic block broken",
+  "sounds.tutorialmod.magic_block_step": "Moists Noices",
+  "sounds.tutorialmod.magic_block_place": "Abra Kadabra",
+  "sounds.tutorialmod.magic_block_hit": "Auch",
+  "sounds.tutorialmod.magic_block_fall": "hehe haw"
 }

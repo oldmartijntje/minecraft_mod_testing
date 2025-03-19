@@ -3,6 +3,7 @@ package com.oldmartijntje.tutorialmod.block;
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
 import com.oldmartijntje.tutorialmod.block.custom.MagicBlock;
 import com.oldmartijntje.tutorialmod.block.custom.PinkGarnetLampBlock;
+import com.oldmartijntje.tutorialmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -62,7 +63,7 @@ public class ModBlocks {
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(1f)
-                            .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                            .sounds(ModSounds.MAGIC_BLOCK_SOUNDS)
                             .requiresTool()));
 
     public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",

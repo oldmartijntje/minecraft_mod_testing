@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod.item.custom;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
+import com.oldmartijntje.tutorialmod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -51,7 +52,7 @@ public class DrillItem extends Item {
                 context.getStack().damage(2, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), ModSounds.CHISEL_USE, SoundCategory.BLOCKS);
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             } else if (clickedBlock == Blocks.TNT) {
                 world.setBlockState(context.getBlockPos(), Blocks.AIR.getDefaultState());
