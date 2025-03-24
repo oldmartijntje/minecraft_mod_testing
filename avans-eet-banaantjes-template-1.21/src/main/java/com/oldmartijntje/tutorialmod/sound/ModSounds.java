@@ -24,8 +24,10 @@ public class ModSounds {
     public static final SoundEvent BAR_BRAWL = registerSoundEvent("bar_brawl");
     public static final RegistryKey<JukeboxSong> BAR_BRAWL_KEY =
             RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(AvansEetBanaantjes.MOD_ID, "bar_brawl"));
-//    public static final RegistryKey<JukeboxSong> KITSUNE_MAISON_KEY =
-//            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(AvansEetBanaantjes.MOD_ID, "kitsune_maison"));
+
+    public static final SoundEvent KITSUNE_MAISON = registerSoundEvent("kitsune_maison");
+    public static final RegistryKey<JukeboxSong> KITSUNE_MAISON_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(AvansEetBanaantjes.MOD_ID, "kitsune_maison"));
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = Identifier.of(AvansEetBanaantjes.MOD_ID, name);

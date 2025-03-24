@@ -42,5 +42,13 @@
         "stream": true
       }
     ]
+  },
+  "kitsune_maison": {
+    "sounds": [
+      {
+        "name": "tutorialmod:kitsune_maison",
+        "stream": true
+      }
+    ]
   }
 }
