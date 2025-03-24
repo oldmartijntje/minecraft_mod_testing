@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
+import com.oldmartijntje.tutorialmod.effect.ModEffects;
 import com.oldmartijntje.tutorialmod.item.ModItemGroups;
 import com.oldmartijntje.tutorialmod.item.ModItems;
 import com.oldmartijntje.tutorialmod.util.HammerUsageEvent;
@@ -29,6 +30,8 @@ public class AvansEetBanaantjes implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModEffects.registerEffects();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 

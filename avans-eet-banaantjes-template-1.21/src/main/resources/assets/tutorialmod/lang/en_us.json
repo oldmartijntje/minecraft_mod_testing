@@ -56,6 +56,8 @@
   "itemgroup.tutorialmod.pink_garnet_items": "Avans Banana Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Avans Banana Blocks",
 
+  "effect.tutorialmod.slimey": "Slimey",
+
   "tooltip.tutorialmod.magic_block.tooltip": "Throw §2transformable§r items on me §4:3§r",
 
   "tooltip.tutorialmod.chisel": "Press §e§l[Shift]§r to read more information.",
