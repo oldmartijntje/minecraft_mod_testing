@@ -18,6 +18,12 @@ public class ModEffects {
                             Identifier.of(AvansEetBanaantjes.MOD_ID, "slimey"), -0.25f,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
+    public static final RegistryEntry<StatusEffect> SPLEEF = registerStatusEffect("spleef",
+            new SpleefEffect(StatusEffectCategory.NEUTRAL, 0xA1A8A8)
+                    .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                            Identifier.of(AvansEetBanaantjes.MOD_ID, "spleef"), 0,
+                            EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
+
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(AvansEetBanaantjes.MOD_ID, name), statusEffect);
