@@ -26,6 +26,26 @@
 
   "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "item.minecraft.potion.effect.spleef_potion_wood": "Wooden Spleef Potion",
+  "item.minecraft.splash_potion.effect.spleef_potion_wood": "Wooden Spleef Splash Potion",
+  "item.minecraft.lingering_potion.effect.spleef_potion_wood": "Wooden Spleef Lingering Potion",
+  "item.minecraft.potion.effect.spleef_potion_stone": "Stone Spleef Potion",
+  "item.minecraft.splash_potion.effect.spleef_potion_stone": "Stone Spleef Splash Potion",
+  "item.minecraft.lingering_potion.effect.spleef_potion_stone": "Stone Spleef Lingering Potion",
+  "item.minecraft.potion.effect.spleef_potion_iron": "Iron Spleef Potion",
+  "item.minecraft.splash_potion.effect.spleef_potion_iron": "Iron Spleef Splash Potion",
+  "item.minecraft.lingering_potion.effect.spleef_potion_iron": "Iron Spleef Lingering Potion",
+  "item.minecraft.potion.effect.spleef_potion_diamond": "Diamond Spleef Potion",
+  "item.minecraft.splash_potion.effect.spleef_potion_diamond": "Diamond Spleef Splash Potion",
+  "item.minecraft.lingering_potion.effect.spleef_potion_diamond": "Diamond Spleef Lingering Potion",
+  "item.minecraft.potion.effect.spleef_potion_netherite": "Netherite Spleef Potion",
+  "item.minecraft.splash_potion.effect.spleef_potion_netherite": "Netherite Spleef Splash Potion",
+  "item.minecraft.lingering_potion.effect.spleef_potion_netherite": "Netherite Spleef Lingering Potion",
+
   "item.tutorialmod.kaupen_armor_trim_smithing_template": "Kaupen Armor Trim",
 
   "item.tutorialmod.kaupen_bow": "Kaupen Bow",
