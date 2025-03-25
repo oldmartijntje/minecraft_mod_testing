@@ -22,7 +22,7 @@ public class SpleefEffect extends StatusEffect {
                 BlockState beneathBlock = serverWorld.getBlockState(beneathPos);
 
                 if (!beneathBlock.isAir()) {
-                    serverWorld.breakBlock(beneathPos, true);  // Drops the block as an item
+                    serverWorld.breakBlock(beneathPos, true);
                 }
         }
 
@@ -31,6 +31,6 @@ public class SpleefEffect extends StatusEffect {
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        return duration % 5 == 0;
+        return duration % Math.round(25 / amplifier) == 0;
     }
 }
