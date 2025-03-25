@@ -23,6 +23,16 @@ public class SpleefEffect extends StatusEffect {
 
                 if (!beneathBlock.isAir()) {
                     serverWorld.breakBlock(beneathPos, true);
+                    boolean limitFound = false;
+                    for (int i = 0; i < Math.floor(amplifier / 5f); i++) {
+                        beneathPos = beneathPos.down();
+                        beneathBlock = serverWorld.getBlockState(beneathPos);
+                        if (!beneathBlock.isAir() && !limitFound) {
+                            serverWorld.breakBlock(beneathPos, true);
+                        } else {
+                            limitFound = true;
+                        }
+                    }
                 }
         }
 
@@ -31,6 +41,8 @@ public class SpleefEffect extends StatusEffect {
 
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
-        return duration % Math.round(25 / amplifier) == 0;
+//        amplifier = 1;
+        int safeAmplifier = Math.max(amplifier, 1);
+        return duration % Math.max(1, Math.round(50f / (safeAmplifier + 1))) == 0;
     }
 }
