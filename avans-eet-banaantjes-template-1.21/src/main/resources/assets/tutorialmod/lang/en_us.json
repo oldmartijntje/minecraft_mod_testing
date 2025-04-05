@@ -86,6 +86,8 @@
   "painting.tutorialmod.saw_them.title": "Saw Them",
   "painting.tutorialmod.saw_them.author": "NanoAttack",
 
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
+
   "tooltip.tutorialmod.magic_block.tooltip": "Throw §2transformable§r items on me §4:3§r",
 
   "tooltip.tutorialmod.chisel": "Press §e§l[Shift]§r to read more information.",

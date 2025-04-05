@@ -1,6 +1,7 @@
 package com.oldmartijntje.tutorialmod;
 
 import com.oldmartijntje.tutorialmod.datagen.*;
+import com.oldmartijntje.tutorialmod.enchantment.ModEnchantments;
 import com.oldmartijntje.tutorialmod.trim.ModTrimMaterials;
 import com.oldmartijntje.tutorialmod.trim.ModTrimPatterns;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -25,5 +26,6 @@ public class AvansEetBanaantjesDataGenerator implements DataGeneratorEntrypoint 
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }
