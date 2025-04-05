@@ -1,6 +1,7 @@
 package com.oldmartijntje.tutorialmod.datagen;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
+import com.oldmartijntje.tutorialmod.block.custom.CauliflowerCropBlock;
 import com.oldmartijntje.tutorialmod.block.custom.PinkGarnetLampBlock;
 import com.oldmartijntje.tutorialmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -39,6 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.PINK_GARNET_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
     }
 
     @Override

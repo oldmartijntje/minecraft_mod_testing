@@ -26,6 +26,8 @@
 
   "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
 
+  "item.tutorialmod.cauliflower_seeds": "Cauliflower Seeds",
+
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
@@ -57,6 +59,8 @@
 
   "block.tutorialmod.pink_garnet_stairs": "Pink Garnet Stairs",
   "block.tutorialmod.pink_garnet_slab": "Pink Garnet Slab",
+
+  "block.tutorialmod.cauliflower_crop": "Cauliflower Crop",
 
   "block.tutorialmod.pink_garnet_button": "Pink Garnet Button",
   "block.tutorialmod.pink_garnet_pressure_plate": "Pink Garnet Pressure plate",

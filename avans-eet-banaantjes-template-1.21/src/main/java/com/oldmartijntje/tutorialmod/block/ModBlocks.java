@@ -1,11 +1,13 @@
 package com.oldmartijntje.tutorialmod.block;
 
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
+import com.oldmartijntje.tutorialmod.block.custom.CauliflowerCropBlock;
 import com.oldmartijntje.tutorialmod.block.custom.MagicBlock;
 import com.oldmartijntje.tutorialmod.block.custom.PinkGarnetLampBlock;
 import com.oldmartijntje.tutorialmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -78,6 +80,13 @@ public class ModBlocks {
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(AvansEetBanaantjes.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
+    }
+
+    public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
+            new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(AvansEetBanaantjes.MOD_ID, name), block);
     }
 
     public static void registerModBlocks() {

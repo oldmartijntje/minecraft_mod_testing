@@ -1,6 +1,7 @@
 package com.oldmartijntje.tutorialmod.item;
 
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
+import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.item.custom.ChiselItem;
 import com.oldmartijntje.tutorialmod.item.custom.DrillItem;
 import com.oldmartijntje.tutorialmod.item.custom.HammerItem;
@@ -82,6 +83,9 @@ public class ModItems {
             new Item( new Item.Settings().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).maxCount(1)));
     public static final Item KITSUNE_MAISON_MUSIC_DISC = registerItem("kitsune_maison_music_disc",
             new Item( new Item.Settings().jukeboxPlayable(ModSounds.KITSUNE_MAISON_KEY).maxCount(1)));
+
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AvansEetBanaantjes.MOD_ID, name), item);
