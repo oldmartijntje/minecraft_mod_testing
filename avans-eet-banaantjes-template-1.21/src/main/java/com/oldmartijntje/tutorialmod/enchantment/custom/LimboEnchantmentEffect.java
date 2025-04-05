@@ -39,6 +39,12 @@ public record LimboEnchantmentEffect() implements EnchantmentEntityEffect {
         BlockPos userPos = user.getBlockPos();
         int x = Math.round((float) userPos.getX() / 8);
         int y = userPos.getY();
+        if (y < 0) {
+            y += 64;
+        }
+        if (y > 128) {
+            y -= 96;
+        }
         int z = Math.round((float) userPos.getZ() / 8);;
         float yaw = user.getYaw();
         float pitch = user.getPitch();
