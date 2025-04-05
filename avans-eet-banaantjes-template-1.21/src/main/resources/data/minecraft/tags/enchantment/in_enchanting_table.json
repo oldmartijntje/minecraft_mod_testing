@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:lightning_striker"
+    "tutorialmod:lightning_striker",
+    "tutorialmod:limbo"
   ]
 }
