@@ -39,8 +39,8 @@ public record LimboEnchantmentEffect() implements EnchantmentEntityEffect {
         BlockPos userPos = user.getBlockPos();
         int x = Math.round((float) userPos.getX() / 8);
         int y = userPos.getY();
-        if (y < 0) {
-            y += 64;
+        if (y < 32) {
+            y += 96;
         }
         if (y > 128) {
             y -= 96;
@@ -50,7 +50,8 @@ public record LimboEnchantmentEffect() implements EnchantmentEntityEffect {
         float pitch = user.getPitch();
         BlockPos targetPos = new BlockPos(x, y, z);
         targetWorld.breakBlock(targetPos, true);
-        targetWorld.breakBlock(targetPos.up(), true);
+        targetWorld.breakBlock(targetPos.up(1), true);
+        world.setBlockState(userPos, Blocks.FIRE.getDefaultState());
         targetWorld.setBlockState(targetPos.down(1), Blocks.MAGMA_BLOCK.getDefaultState());
         user.teleport(targetWorld, x, y, z,  Collections.emptySet(), yaw, pitch);
         System.out.println("sent entity Limbo at ["+ x + ", " + y + ", " + z + "] go there with '/tp @s " + x + " " + y + " " + z + "'");
