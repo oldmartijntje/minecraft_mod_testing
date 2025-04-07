@@ -48,6 +48,7 @@ public class ModItemGroups {
                         entries.add(ModItems.KITSUNE_MAISON_MUSIC_DISC);
 
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
+                        entries.add(ModItems.HONEY_BERRIES);
                     })).build());
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod.block;
 
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
 import com.oldmartijntje.tutorialmod.block.custom.CauliflowerCropBlock;
+import com.oldmartijntje.tutorialmod.block.custom.HoneyBerryBushBlock;
 import com.oldmartijntje.tutorialmod.block.custom.MagicBlock;
 import com.oldmartijntje.tutorialmod.block.custom.PinkGarnetLampBlock;
 import com.oldmartijntje.tutorialmod.sound.ModSounds;
@@ -81,6 +82,9 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Identifier.of(AvansEetBanaantjes.MOD_ID, name),
                 new BlockItem(block, new Item.Settings()));
     }
+
+    public static final Block HONEY_BERRY_BUSH = registerBlockWithoutBlockItem("honey_berry_bush",
+            new HoneyBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
