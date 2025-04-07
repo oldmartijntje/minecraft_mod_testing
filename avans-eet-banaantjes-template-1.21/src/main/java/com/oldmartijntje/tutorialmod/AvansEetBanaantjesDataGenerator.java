@@ -4,6 +4,8 @@ import com.oldmartijntje.tutorialmod.datagen.*;
 import com.oldmartijntje.tutorialmod.enchantment.ModEnchantments;
 import com.oldmartijntje.tutorialmod.trim.ModTrimMaterials;
 import com.oldmartijntje.tutorialmod.trim.ModTrimPatterns;
+import com.oldmartijntje.tutorialmod.world.ModConfiguredFeatures;
+import com.oldmartijntje.tutorialmod.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -27,5 +29,7 @@ public class AvansEetBanaantjesDataGenerator implements DataGeneratorEntrypoint 
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

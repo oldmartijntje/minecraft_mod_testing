@@ -9,6 +9,7 @@ import com.oldmartijntje.tutorialmod.item.ModItemGroups;
 import com.oldmartijntje.tutorialmod.item.ModItems;
 import com.oldmartijntje.tutorialmod.potion.ModPotions;
 import com.oldmartijntje.tutorialmod.util.HammerUsageEvent;
+import com.oldmartijntje.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
@@ -42,6 +43,7 @@ public class AvansEetBanaantjes implements ModInitializer {
 		ModPotions.registerPotions();
 
 		ModEnchantmentEffects.registerEnchantmentEffects();
+		ModWorldGeneration.generateModWorldGen();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 
