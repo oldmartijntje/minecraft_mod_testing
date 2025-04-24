@@ -1,10 +1,7 @@
 package com.oldmartijntje.tutorialmod.block;
 
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
-import com.oldmartijntje.tutorialmod.block.custom.CauliflowerCropBlock;
-import com.oldmartijntje.tutorialmod.block.custom.HoneyBerryBushBlock;
-import com.oldmartijntje.tutorialmod.block.custom.MagicBlock;
-import com.oldmartijntje.tutorialmod.block.custom.PinkGarnetLampBlock;
+import com.oldmartijntje.tutorialmod.block.custom.*;
 import com.oldmartijntje.tutorialmod.sound.ModSounds;
 import com.oldmartijntje.tutorialmod.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -117,7 +114,7 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
 
     public static final Block DRIFTWOOD_SAPLING = registerBlock("driftwood_sapling",
-            new SaplingBlock(ModSaplingGenerators.DRIFTWOOD,AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new ModSaplingBlock(ModSaplingGenerators.DRIFTWOOD,AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.SAND));
 
 
     public static void registerModBlocks() {
