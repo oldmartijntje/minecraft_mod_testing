@@ -5,6 +5,8 @@ import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
 import com.oldmartijntje.tutorialmod.effect.ModEffects;
 import com.oldmartijntje.tutorialmod.enchantment.ModEnchantmentEffects;
 import com.oldmartijntje.tutorialmod.enchantment.ModEnchantments;
+import com.oldmartijntje.tutorialmod.entity.ModEntities;
+import com.oldmartijntje.tutorialmod.entity.custom.MantisEntity;
 import com.oldmartijntje.tutorialmod.item.ModItemGroups;
 import com.oldmartijntje.tutorialmod.item.ModItems;
 import com.oldmartijntje.tutorialmod.potion.ModPotions;
@@ -14,6 +16,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.block.FireBlock;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -45,6 +48,8 @@ public class AvansEetBanaantjes implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 
 		ModDataComponentTypes.registerDataComponentTypes();
+
+		ModEntities.registerModEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.FALLEN_STAR, 600);
 
@@ -83,5 +88,7 @@ public class AvansEetBanaantjes implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_DRIFTWOOD_WOOD, 5, 5);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DRIFTWOOD_LEAVES, 30, 60);
+
+		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 }

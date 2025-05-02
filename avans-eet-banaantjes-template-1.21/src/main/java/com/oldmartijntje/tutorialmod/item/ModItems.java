@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod.item;
 
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
+import com.oldmartijntje.tutorialmod.entity.ModEntities;
 import com.oldmartijntje.tutorialmod.item.custom.ChiselItem;
 import com.oldmartijntje.tutorialmod.item.custom.DrillItem;
 import com.oldmartijntje.tutorialmod.item.custom.HammerItem;
@@ -89,6 +90,9 @@ public class ModItems {
 
     public static final Item HONEY_BERRIES = registerItem("honey_berries",
             new AliasedBlockItem(ModBlocks.HONEY_BERRY_BUSH, new Item.Settings().food(ModFoodComponent.HONEY_BERRY)));
+
+    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
+            new SpawnEggItem(ModEntities.MANTIS, 0xffbf00, 0x00bfff, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AvansEetBanaantjes.MOD_ID, name), item);
