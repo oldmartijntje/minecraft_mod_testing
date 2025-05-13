@@ -6,6 +6,8 @@
   "item.tutorialmod.cauliflower": "BLOEMKOOL!!!",
   "item.tutorialmod.fallen_star": "Fallen Star",
 
+  "item.tutorialmod.tomahawk": "Tomahawk",
+
   "item.tutorialmod.pink_garnet_sword": "A Sword made out of Pink Garnet",
   "item.tutorialmod.pink_garnet_pickaxe": "A Pickaxe made out of Pink Garnet",
   "item.tutorialmod.pink_garnet_axe": "A Axe made out of Pink Garnet",
@@ -130,5 +132,6 @@
   "sounds.tutorialmod.magic_block_fall": "hehe haw",
 
 
-  "entity.tutorialmod.mantis": "Mantis"
+  "entity.tutorialmod.mantis": "Mantis",
+  "entity.tutorialmod.tomahawk": "Tomahawk"
 }

@@ -3,10 +3,7 @@ package com.oldmartijntje.tutorialmod.item;
 import com.oldmartijntje.tutorialmod.AvansEetBanaantjes;
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.entity.ModEntities;
-import com.oldmartijntje.tutorialmod.item.custom.ChiselItem;
-import com.oldmartijntje.tutorialmod.item.custom.DrillItem;
-import com.oldmartijntje.tutorialmod.item.custom.HammerItem;
-import com.oldmartijntje.tutorialmod.item.custom.ModArmorItem;
+import com.oldmartijntje.tutorialmod.item.custom.*;
 import com.oldmartijntje.tutorialmod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.gui.screen.Screen;
@@ -93,6 +90,9 @@ public class ModItems {
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0xffbf00, 0x00bfff, new Item.Settings()));
+
+    public static final Item TOMAHAWK = registerItem("tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(16)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(AvansEetBanaantjes.MOD_ID, name), item);
