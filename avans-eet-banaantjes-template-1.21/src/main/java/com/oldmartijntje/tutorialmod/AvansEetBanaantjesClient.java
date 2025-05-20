@@ -2,10 +2,7 @@ package com.oldmartijntje.tutorialmod;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.entity.ModEntities;
-import com.oldmartijntje.tutorialmod.entity.client.MantisModel;
-import com.oldmartijntje.tutorialmod.entity.client.MantisRenderer;
-import com.oldmartijntje.tutorialmod.entity.client.TomahawkProjectileModel;
-import com.oldmartijntje.tutorialmod.entity.client.TomahawkProjectileRenderer;
+import com.oldmartijntje.tutorialmod.entity.client.*;
 import com.oldmartijntje.tutorialmod.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -31,5 +28,7 @@ public class AvansEetBanaantjesClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(TomahawkProjectileModel.TOMAHAWK, TomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
+
+        EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
     }
 }
