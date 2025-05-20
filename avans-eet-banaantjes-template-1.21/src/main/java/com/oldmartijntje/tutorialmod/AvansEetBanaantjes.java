@@ -9,6 +9,7 @@ import com.oldmartijntje.tutorialmod.entity.ModEntities;
 import com.oldmartijntje.tutorialmod.entity.custom.MantisEntity;
 import com.oldmartijntje.tutorialmod.item.ModItemGroups;
 import com.oldmartijntje.tutorialmod.item.ModItems;
+import com.oldmartijntje.tutorialmod.particle.ModParticles;
 import com.oldmartijntje.tutorialmod.potion.ModPotions;
 import com.oldmartijntje.tutorialmod.util.HammerUsageEvent;
 import com.oldmartijntje.tutorialmod.villager.ModVillagers;
@@ -51,6 +52,8 @@ public class AvansEetBanaantjes implements ModInitializer {
 
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+
+		ModParticles.registerParticles();
 
 		ModEnchantmentEffects.registerEnchantmentEffects();
 		ModWorldGeneration.generateModWorldGen();

@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod.item.custom;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
+import com.oldmartijntje.tutorialmod.particle.ModParticles;
 import com.oldmartijntje.tutorialmod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -60,9 +61,13 @@ public class ChiselItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
-                ((ServerWorld) world).spawnParticles(new BlockStateParticleEffect(ParticleTypes.BLOCK, clickedBlock.getDefaultState()),
-                        context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + 1,
-                        context.getBlockPos().getZ()+0.5, 5, 0, 0, 0, 1);
+                ((ServerWorld) world).spawnParticles(ParticleTypes.FLAME,
+                        context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + 1.5,
+                        context.getBlockPos().getZ() + 0.5, 10, 0, 0, 0, 3);
+
+                ((ServerWorld) world).spawnParticles(ModParticles.PINK_GARNET_PARTICLE,
+                        context.getBlockPos().getX() + 0.5, context.getBlockPos().getY() + 1.0,
+                        context.getBlockPos().getZ() + 0.5, 8, 0, 0, 0, 2);
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             } else if (CHISEL_MAP.containsValue(clickedBlock)) {
                 world.setBlockState(context.getBlockPos(), getKeyByValue(CHISEL_MAP, clickedBlock).getDefaultState());

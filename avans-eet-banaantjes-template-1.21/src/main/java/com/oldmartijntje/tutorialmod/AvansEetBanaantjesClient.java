@@ -3,9 +3,12 @@ package com.oldmartijntje.tutorialmod;
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.entity.ModEntities;
 import com.oldmartijntje.tutorialmod.entity.client.*;
+import com.oldmartijntje.tutorialmod.particle.ModParticles;
+import com.oldmartijntje.tutorialmod.particle.PinkGarnetParticle;
 import com.oldmartijntje.tutorialmod.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
@@ -30,5 +33,7 @@ public class AvansEetBanaantjesClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.TOMAHAWK, TomahawkProjectileRenderer::new);
 
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
+
+        ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
     }
 }
