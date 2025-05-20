@@ -97,6 +97,9 @@ public class ModItems {
     public static final Item SPECTRE_STAFF = registerItem("spectre_staff",
             new Item(new Item.Settings().maxCount(1)));
 
+    public static final Item COMBONER_STAFF = registerItem("comboner_staff",
+            new Item(new Item.Settings().maxCount(1)));
+
     public static final Item SPECTRAL_STAFF = registerItem("spectral_staff",
             new Item(new Item.Settings().maxCount(1)));
 

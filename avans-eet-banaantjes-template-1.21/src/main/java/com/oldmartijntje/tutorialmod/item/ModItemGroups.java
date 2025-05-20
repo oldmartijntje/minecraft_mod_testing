@@ -55,6 +55,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOMAHAWK);
                         entries.add(ModItems.SPECTRE_STAFF);
                         entries.add(ModItems.SPECTRAL_STAFF);
+                        entries.add(ModItems.COMBONER_STAFF);
                     })).build());
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
