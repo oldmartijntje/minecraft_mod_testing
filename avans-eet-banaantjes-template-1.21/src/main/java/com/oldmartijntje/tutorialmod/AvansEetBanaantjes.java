@@ -1,6 +1,7 @@
 package com.oldmartijntje.tutorialmod;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
+import com.oldmartijntje.tutorialmod.block.entity.ModBlockEntities;
 import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
 import com.oldmartijntje.tutorialmod.datagen.ModLootTableProvider;
 import com.oldmartijntje.tutorialmod.effect.ModEffects;
@@ -59,6 +60,8 @@ public class AvansEetBanaantjes implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		ModEnchantmentEffects.registerEnchantmentEffects();
 		ModWorldGeneration.generateModWorldGen();
+
+		ModBlockEntities.registerBlockEntities();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 

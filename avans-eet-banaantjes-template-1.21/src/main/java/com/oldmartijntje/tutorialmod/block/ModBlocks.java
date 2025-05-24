@@ -119,6 +119,9 @@ public class ModBlocks {
     public static final Block CHAIR = registerBlock("chair",
             new ChairBlock(AbstractBlock.Settings.create().nonOpaque()));
 
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
+
 
     public static void registerModBlocks() {
         AvansEetBanaantjes.LOGGER.info("registering ModBlocks for " + AvansEetBanaantjes.MOD_ID);
