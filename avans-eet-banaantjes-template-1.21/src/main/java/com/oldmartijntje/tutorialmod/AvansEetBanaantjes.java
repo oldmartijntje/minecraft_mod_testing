@@ -2,6 +2,7 @@ package com.oldmartijntje.tutorialmod;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
 import com.oldmartijntje.tutorialmod.component.ModDataComponentTypes;
+import com.oldmartijntje.tutorialmod.datagen.ModLootTableProvider;
 import com.oldmartijntje.tutorialmod.effect.ModEffects;
 import com.oldmartijntje.tutorialmod.enchantment.ModEnchantmentEffects;
 import com.oldmartijntje.tutorialmod.enchantment.ModEnchantments;
@@ -12,6 +13,7 @@ import com.oldmartijntje.tutorialmod.item.ModItems;
 import com.oldmartijntje.tutorialmod.particle.ModParticles;
 import com.oldmartijntje.tutorialmod.potion.ModPotions;
 import com.oldmartijntje.tutorialmod.util.HammerUsageEvent;
+import com.oldmartijntje.tutorialmod.util.ModLootTableModifiers;
 import com.oldmartijntje.tutorialmod.villager.ModVillagers;
 import com.oldmartijntje.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -54,7 +56,7 @@ public class AvansEetBanaantjes implements ModInitializer {
 		ModPotions.registerPotions();
 
 		ModParticles.registerParticles();
-
+		ModLootTableModifiers.modifyLootTables();
 		ModEnchantmentEffects.registerEnchantmentEffects();
 		ModWorldGeneration.generateModWorldGen();
 
