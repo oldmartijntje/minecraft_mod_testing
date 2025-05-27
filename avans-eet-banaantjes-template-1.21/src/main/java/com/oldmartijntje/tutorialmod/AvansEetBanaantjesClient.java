@@ -1,6 +1,8 @@
 package com.oldmartijntje.tutorialmod;
 
 import com.oldmartijntje.tutorialmod.block.ModBlocks;
+import com.oldmartijntje.tutorialmod.block.entity.ModBlockEntities;
+import com.oldmartijntje.tutorialmod.block.entity.renderer.PedestalBlockEntityRenderer;
 import com.oldmartijntje.tutorialmod.entity.ModEntities;
 import com.oldmartijntje.tutorialmod.entity.client.*;
 import com.oldmartijntje.tutorialmod.particle.ModParticles;
@@ -12,6 +14,8 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 
 public class AvansEetBanaantjesClient implements ClientModInitializer {
     @Override
@@ -35,5 +39,7 @@ public class AvansEetBanaantjesClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.CHAIR, ChairRenderer::new);
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.PINK_GARNET_PARTICLE, PinkGarnetParticle.Factory::new);
+
+        BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
     }
 }
